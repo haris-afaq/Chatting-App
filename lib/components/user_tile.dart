@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+
+class UserTile extends StatelessWidget {
+
+  final String text;
+  final void Funcation()? onTap;
+
+  UserTile({super.key,
+  required this.text,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.secondary,
+          borderRadius: BorderRadius.circular(12),
+
+        ),
+        child: Row(children: [
+          Icon(Icons.person),
+
+
+        ],),
+      ),
+    );
+  }
+}
